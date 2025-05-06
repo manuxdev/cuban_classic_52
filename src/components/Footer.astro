@@ -60,14 +60,14 @@ const links = [
             {
                 links.map(link =>(
                 <a href={lang === 'en' ? link.href : `/${lang}${link.href}`} 
-                class="hover:text-emerald-600 transition-colors">
+                class="hover:text-emerald-600 transition-colors text-white">
                     {link.name}
                 </a>
                 ))
             }
         </li>
     </ul>
-    <div class="flex sm:gap-x-8 gap-x-4 items-center justify-start md:w-auto w-full sm:p-0 p-4 ">
+    <div class="flex sm:gap-x-8 gap-x-4 items-center justify-start md:w-auto w-full sm:p-2 p-4  text-white">
         <Whatsapp class="w-10 h-10 hover:scale-110 transition-all"/>
         <Facebook class="w-10 h-10 hover:scale-110 transition-all"/>
         <Instagram class="w-10 h-10 hover:scale-110 transition-all"/>

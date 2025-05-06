@@ -10,7 +10,7 @@ function Itinerary({ place, lang }) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 640);
+    const checkMobile = () => setIsMobile(window.innerWidth < 840);
     checkMobile();
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
@@ -86,7 +86,7 @@ function Itinerary({ place, lang }) {
                   ${
                     selectedItinerary === item.title
                       ? 'bg-emerald-500/20 text-emerald-600 dark:text-emerald-400'
-                      : 'hover:bg-gray-100 dark:hover:bg-gray-700'
+                      : 'hover:bg-gray-500 text-white'
                   }
                 `}
               >
