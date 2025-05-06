@@ -36,7 +36,7 @@ const PlacesCard = ({placeName, lang}) => {
                             />
                         </div>
                         <div className='py-5 px-5 text-start'>
-                            <h4 className='text-xl font-semibold mb-3'>{element.title}</h4>
+                            <h4 className='text-xl font-semibold mb-3 text-palete-white-blue '>{element.title}</h4>
                             <p className='text-palete-white-blue text-base'>{element.description}</p>
                         </div>
                     </li>
