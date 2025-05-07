@@ -7,7 +7,7 @@ const MenuOverlay = ({ links }) => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
-      document.body.style.position = 'fixed';
+      document.body.style.position = 'absolute';
     } else {
       document.body.style.overflow = '';
       document.body.style.position = '';
@@ -19,7 +19,7 @@ const MenuOverlay = ({ links }) => {
       {/* Botón Hamburguesa */}
       <button
         onClick={() => setIsOpen(true)}
-        className={`md:hidden fixed top-8 right-5 z-40 p-2 ${isOpen ? 'invisible' : 'visible'}`}
+        className={`md:hidden absolute top-8 right-5 z-40 p-2 ${isOpen ? 'invisible' : 'visible'}`}
         aria-label="Abrir menú"
       >
         <div className="space-y-1.5">
